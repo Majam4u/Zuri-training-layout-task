@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+   
+}
+
+.main-container{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: stretch; */
+}
+
+header ul li a{
+    /* display: inline-block; */
+    align-items: flex-start;
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(0, 0, 0);
+    color: hsl(47, 93%, 50%);
+    padding: 0 5px;
+}
+
+
+.flex-design{
+    background-color: green;
+    border: 1px solid brown;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    
+    list-style: none;
+}
+
+a:hover {
+    background: hsl(184, 100%, 22%);
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0px auto;
+    align-content: center;
+    flex-direction: row;
+    height: 80vh;
+    width: 50%;
+    max-width: 1440px;
+    min-width: 375px;
+    min-height: 60vh;
+    min-width: 375px;
+    min-height: 430px;
+    /* width: min(100% - 2rem, 1450px);
+    margin-inline: auto; */
+}
+
+input[type]{
+margin: 80px 0 10px 0;  
+}
+
+@media screen and (max-width:1100px)and  (min-width:750px) {
+    .container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0px auto;
+        align-content: center;
+        flex-direction: row;
+        height: 100vh;
+        width: 50%;
+    }
+    
+    input[type]{
+    margin-top: 60px;
+    margin-bottom: 10px;  
+    }
+}
+
+
+@media screen and (max-width:750px)and  (min-width:300px) {
+    .container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0px auto;
+        align-content: center;
+        flex-direction: row;
+        height: 100vh;
+        width: 70%;
+        /* width: min(100% - 2rem, 350px); */
+        /* margin-inline: auto; */
+    } 
+
+    input[type]{
+    margin-top: 50px;
+    margin-bottom: 10px;  
+    }
+    .luxury input[type] {
+        margin-top: 35px;
+        margin-bottom: 10px;  
+        }
+
+}
+
+
+.sedans, .suvs, .luxury{
+    padding: 20px;
+    width: 100%;
+    height: 60%;
+    /* border-radius:4px 0 0 4px and 0 4px 4px 0 ; */
+    font-size: 16px;
+}
+
+@media screen and (max-width:650) and (min-width:300) {
+.container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin: 0px auto;
+        align-content: center;
+        flex-direction: row;
+        height: 100vh;
+        width: 70vw;
+    } 
+
+    input[type]{
+    margin-top: 50px;
+    margin-bottom: 10px;  
+    }
+    .luxury input[type] {
+        margin-top: 35px;
+        margin-bottom: 10px;  
+        }
+
+
+    .sedans, .suvs, .luxury{
+        padding: 10px;
+        width: 100%;
+        height: 50%;
+        /* border-radius:4px 0 0 4px and 0 4px 4px 0 ; */
+        font-size: 8px;
+    }
+        
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    /* border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; */
+    border-radius:10px 0 0 10px;
+}
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius:0 10px 10px 0;
+}
+
+p{
+   color: hsla(0, 0%, 100%, 0.75);
+   font-size: 15px;
+   font-family: 'Lexend Deca', sans-serif;
+   font-weight: 400px;
+}
+
+h2, img, input {
+    color: hsl(0, 0%, 95%);
+    font-size: bold;
+    font-weight: 700;
+    font-family: "Big Shoulders Display";
+}
+
+h2{
+    font-size: bold;
+    font-weight: 700;
+    font-family: "Big Shoulders Display";
+    /* font-size: 3em; */
+}
+
+.sedans input{
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs input{
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury input{
+    color:hsl(179, 100%, 13%);
+}
+
+input{
+    border: white; 
+    border-radius: 50vw;
+    padding: 10px;
+    width: 80%;
+    /* margin-top:   */
+}
+
+input:hover {
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+}
+
+/* 
+@media (max-width:1440px){
+    .main-container{
+        width:50%;
+        display: flex;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom:0 auto;
+        width: 1440px;
+    }
+
+    .sedans, .suvs, .luxury{
+        margin: 0 auto;
+    }
+
+    input{
+        border: white; 
+        border-radius: 50vw;
+        padding: 10px;
+        width: 80%;
+        /* margin-top: 40px;
+        /* margin-bottom: 20px; 
+        margin: auto 0;
+    }
+
+    
+    .sedans, .suvs, .luxury{
+        margin: 5px auto;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .sedans input,.suvs input, .luxury input{
+        margin-bottom: 10px;
+    }
+}
+
+/* @media (min-width:375px){
+    main{
+        width:50%;
+    }
+
+    input{
+        border: white; 
+        border-radius: 50vw;
+        padding: 10px;
+        width: 80%;
+        margin: 10px auto 0 auto;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        width: 375px;
+        margin: 100px;
+    }
+
+    .sedans, .suvs, .luxury{
+        margin: 5px auto;
+        height: 50vh;
+        width: 50vw;
+    }
+
+    .sedans input,.suvs input, .luxury input{
+        margin: 40px 15px 10px 0;
+    }
+} */
+
+/* @media screen and (max-width: 375px) {
+
+    input type{
+        margin-bottom: 10px;
+    }
+
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+    justify-content: center;
+    width: 20%;
+    flex-direction: column;
+    } */
+
+    /* .sedans input,.suvs input, .luxury input{
+        margin: 40px 15px 10px 0;
+    } */
+/* } */
+
+
+
+/* Grid Design Starts */
+
+
+ul{
+    background-color: blue;
+    justify-content: center;
+}
+main ul li a{
+    background-color: blue;
+    color:rgb(14, 237, 196);
+    text-decoration: none;
+    text-align: center;
+    /* padding-left: 150px; */
+}
+
+body .grid-container{
+font-size: 40px;
+width: 100%;
+min-height: 100vh;
+background-color: rgb(0, 0, 100);
+}
+
+.grid-container{
+    display: grid;
+    gap: 20px;
+    height: 100vh;
+    /* grid-template-columns: 300px 100px 100px 200px 200px;
+    grid-template-rows: 200px 300px; */
+    grid-template-areas: "a a a b b"
+    "a a a b b"
+    "c c d d d"
+    "c c e e e";
+    width: 50%;
+    text-align: center;
+    padding: 3em 2.5em;
+
+}
+
+
+.cont-a{
+    background-color: rgb(209, 38, 38);
+    grid-area: a;
+
+}
+
+.cont-b{
+    background-color: rgb(236, 126, 16);
+    grid-area: b;
+}
+
+.cont-c{
+    background-color:rgb(42, 218, 26);
+    grid-area: c;
+}
+
+.cont-d{
+    background-color:rgb(23, 218, 236);
+    grid-area: d;
+}
+
+.cont-e{
+    background-color: rgb(16, 225, 240);
+    grid-area: e;
+}
